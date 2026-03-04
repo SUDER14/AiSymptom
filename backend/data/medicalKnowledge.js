@@ -314,6 +314,170 @@ const medicalKnowledge = [
     category: "guidance",
     text: "Physiotherapy referral is recommended for: any grade II or III muscle injury, pain lasting more than 6 weeks, recurrent injuries in the same location, weakness or neurological symptoms, post-surgical rehabilitation, and when initial self-management has failed.",
   },
+
+  // ── CHEST / BREATHING ────────────────────────────────────────────────────────
+  {
+    id: "chest_001",
+    region: "pectoralis_major",
+    category: "red_flags",
+    text: "Chest pain must always be taken seriously. Red flags requiring emergency care: crushing or pressure-like chest pain radiating to the left arm, jaw, or back; chest pain with sweating, nausea, or breathlessness; sudden sharp chest pain with difficulty breathing (possible pulmonary embolism or pneumothorax). Call emergency services immediately for these symptoms.",
+  },
+  {
+    id: "chest_002",
+    region: "pectoralis_major",
+    category: "symptoms",
+    text: "Costochondritis is inflammation of the cartilage connecting the ribs to the sternum. It causes sharp, localised chest wall pain that worsens with movement, deep breathing, or pressure on the area. It is benign and self-limiting, typically resolving in weeks. Distinguished from cardiac pain by its reproducibility on palpation.",
+  },
+  {
+    id: "chest_003",
+    region: "pectoralis_major",
+    category: "treatment",
+    text: "Musculoskeletal chest pain treatment: NSAIDs for inflammation, heat pack to the chest wall muscles, gentle stretching of the pectoralis major, avoiding activities that compress the chest. Breathing exercises to prevent shallow breathing patterns from pain. For costochondritis, rest and anti-inflammatories for 4-6 weeks.",
+  },
+
+  // ── LOWER BACK ───────────────────────────────────────────────────────────────
+  {
+    id: "back_001",
+    region: "latissimus_dorsi",
+    category: "symptoms",
+    text: "Lower back pain affects 80% of adults at some point. Mechanical lower back pain (most common) is caused by muscle strain, ligament sprain, or disc problems. Pain typically worsens with movement and improves with rest. Sciatica (nerve root irritation) causes shooting pain, numbness, or tingling from the lower back down one leg, often to the foot.",
+  },
+  {
+    id: "back_002",
+    region: "latissimus_dorsi",
+    category: "red_flags",
+    text: "Red flags for serious lower back pathology requiring urgent evaluation: cauda equina syndrome (bilateral leg weakness, saddle anaesthesia, bladder or bowel dysfunction — surgical emergency), back pain in cancer patients (possible metastases), back pain with fever and night sweats (possible spinal infection), pain in patients over 50 with no prior history.",
+  },
+  {
+    id: "back_003",
+    region: "latissimus_dorsi",
+    category: "treatment",
+    text: "Lower back pain treatment: avoid bed rest (stay active within pain limits), NSAIDs for short-term pain relief, heat pack to relax muscle spasm, gentle walking as first exercise. Core strengthening (dead bugs, bridges, bird-dog) and McKenzie exercises for disc-related pain. For sciatica, nerve mobilisation and avoiding prolonged sitting are helpful. Most episodes resolve in 4-6 weeks.",
+  },
+
+  // ── JOINT PAIN ───────────────────────────────────────────────────────────────
+  {
+    id: "joint_001",
+    region: "general",
+    category: "symptoms",
+    text: "Joint pain (arthralgia) can be caused by: osteoarthritis (wear and tear, worse with use, improves with rest), rheumatoid arthritis (inflammatory, worse in morning with prolonged stiffness over 1 hour, often symmetric), gout (sudden severe pain in one joint, usually big toe or knee, associated with high uric acid), reactive arthritis (following infection), or septic arthritis (infected joint — emergency).",
+  },
+  {
+    id: "joint_002",
+    region: "general",
+    category: "red_flags",
+    text: "Septic arthritis (infected joint) is a medical emergency. Signs include: hot, red, swollen joint with severe pain and restricted movement, often with fever and chills. The knee, hip, and shoulder are most commonly affected. Immediate hospital admission and intravenous antibiotics are required to prevent permanent joint destruction.",
+  },
+  {
+    id: "joint_003",
+    region: "general",
+    category: "treatment",
+    text: "Osteoarthritis management: weight loss to reduce joint load (1 kg loss = 4 kg force reduction on knee), low-impact exercise (swimming, cycling), physiotherapy for muscle strengthening around the joint, paracetamol or topical NSAIDs for pain. Intra-articular corticosteroid injections for flares. Joint replacement when conservative management fails.",
+  },
+
+  // ── REFERRED PAIN & NERVE PAIN ───────────────────────────────────────────────
+  {
+    id: "nerve_001",
+    region: "general",
+    category: "symptoms",
+    text: "Referred pain occurs when pain is felt at a location different from its source. Classic examples: heart attack causing left arm or jaw pain; kidney stones causing flank pain radiating to the groin; appendicitis starting around the navel Moving to the right lower abdomen; hip pathology causing knee pain. Nerve pain (neuropathic) is typically described as burning, shooting, electric, or tingling.",
+  },
+  {
+    id: "nerve_002",
+    region: "general",
+    category: "treatment",
+    text: "Neuropathic pain management: first-line medications include gabapentin, pregabalin, duloxetine, and tricyclic antidepressants (in low doses). Topical lidocaine patches or capsaicin cream for localised neuropathic pain. Physiotherapy and TENS (transcutaneous electrical nerve stimulation) can help. Addressing the underlying cause is essential for long-term relief.",
+  },
+
+  // ── CHRONIC PAIN ────────────────────────────────────────────────────────────
+  {
+    id: "chronic_001",
+    region: "general",
+    category: "guidance",
+    text: "Chronic pain (pain lasting more than 3 months) involves central sensitisation where the nervous system becomes hypersensitive. A biopsychosocial approach is most effective: combining physical treatment, psychological support (CBT for pain), sleep improvement, graded activity, and social support. Pain management clinics offer multidisciplinary care. Opioids are generally avoided for chronic non-cancer pain.",
+  },
+  {
+    id: "chronic_002",
+    region: "general",
+    category: "guidance",
+    text: "Sleep and pain have a bidirectional relationship — poor sleep worsens pain sensitivity, and pain disrupts sleep. Improving sleep hygiene is an effective pain management strategy: consistent sleep schedule, dark and cool bedroom, avoiding screens before bed. CBT-I (cognitive behavioural therapy for insomnia) is more effective than sleep medication long-term.",
+  },
+
+  // ── DELTOID / SHOULDER ───────────────────────────────────────────────────────
+  {
+    id: "deltoid_001",
+    region: "deltoid",
+    category: "symptoms",
+    text: "Rotator cuff problems are the most common cause of shoulder pain. Symptoms include pain with overhead activities, difficulty reaching behind the back, night pain (especially lying on the affected side), and weakness with arm elevation. Impingement syndrome involves rotator cuff tendons being compressed under the acromion. Partial or full thickness tears may require surgical repair.",
+  },
+  {
+    id: "deltoid_002",
+    region: "deltoid",
+    category: "treatment",
+    text: "Shoulder impingement and rotator cuff rehabilitation: NSAIDs, corticosteroid injection for severe cases, physiotherapy focusing on rotator cuff strengthening (external rotation, internal rotation, full can exercises), scapular stabilisation exercises, and posture correction. Most cases respond to 6-12 weeks of physiotherapy. Surgical review if no improvement.",
+  },
+  {
+    id: "deltoid_003",
+    region: "deltoid",
+    category: "red_flags",
+    text: "Shoulder red flags: acute severe pain after trauma with inability to raise the arm (possible rotator cuff tear or fracture); shoulder dislocation (visually deformed shoulder with arm held outward); shoulder pain with neck pain and arm tingling (possible cervical radiculopathy); gradually worsening shoulder pain with restricted movement in all directions in older patients (adhesive capsulitis or frozen shoulder).",
+  },
+
+  // ── ABDOMINAL / CORE ─────────────────────────────────────────────────────────
+  {
+    id: "ab_001",
+    region: "rectus_abdominis",
+    category: "symptoms",
+    text: "Abdominal muscle strain causes pain aggravated by movement, coughing, and exercise. Common in athletes, especially with twisting sports. A sports hernia (athletic pubalgia) causes groin pain radiating to the lower abdomen or inner thigh after exertion. Diastasis recti (separation of abdominal muscles) is common postpartum, causing a midline bulge when straining.",
+  },
+  {
+    id: "ab_002",
+    region: "rectus_abdominis",
+    category: "red_flags",
+    text: "Abdominal pain red flags requiring urgent evaluation: sudden severe pain (possible rupture, ischaemia), pain with fever and rigidity (peritonitis), abdominal pain with haematemesis or rectal bleeding, persistent pain in the right lower quadrant (appendicitis), abdominal pain in pregnant women (ectopic pregnancy, placental abruption), pulsatile abdominal mass (aortic aneurysm).",
+  },
+
+  // ── GLUTEUS / HIP ────────────────────────────────────────────────────────────
+  {
+    id: "glute_001",
+    region: "gluteus_maximus",
+    category: "symptoms",
+    text: "Hip pain in adults is commonly caused by: osteoarthritis (groin pain with walking, limited internal rotation), greater trochanteric pain syndrome (lateral hip pain, worse lying on side), piriformis syndrome (deep buttock pain mimicking sciatica), hip labral tear (clicking, groin pain, instability). Hip fracture risk increases dramatically after 60, especially in osteoporotic patients.",
+  },
+  {
+    id: "glute_002",
+    region: "gluteus_maximus",
+    category: "treatment",
+    text: "Greater trochanteric pain syndrome (lateral hip bursitis/tendinopathy): avoid compressive positions (crossing legs, hip adduction), load management, physiotherapy with hip abductor strengthening (gluteus medius exercises — side-lying abduction, clamshells, single-leg stands). Corticosteroid injection for persistent cases. Avoid stretching ITB as it worsens tendon compression.",
+  },
+
+  // ── HAMSTRINGS ───────────────────────────────────────────────────────────────
+  {
+    id: "ham_001",
+    region: "hamstrings",
+    category: "symptoms",
+    text: "Hamstring strains are the most common sports injury. Grade I: localised tightness and minor pain. Grade II: partial tear with sudden sharp pain mid-sprint, possible bruising behind the thigh. Grade III: complete rupture, heard as a pop, immediate inability to walk. Proximal hamstring tendinopathy causes deep buttock pain worsening with sitting on hard surfaces and early-morning running.",
+  },
+  {
+    id: "ham_002",
+    region: "hamstrings",
+    category: "treatment",
+    text: "Hamstring rehabilitation: acute phase (72 hours) — RICE, walking as tolerated. Subacute — gentle range of motion, isometric hamstring contractions. Progressive loading — Nordic hamstring curls (best evidence for prevention and rehabilitation), deadlifts, bridging with feet elevated. Return to sport when achieving 90% strength symmetry. Proximal tendinopathy: avoid stretching, use compression shorts, heavy slow resistance loading.",
+  },
+
+  // ── QUADRICEPS / KNEE ────────────────────────────────────────────────────────
+  {
+    id: "quad_001",
+    region: "quadriceps",
+    category: "symptoms",
+    text: "Knee pain is the most common musculoskeletal complaint. Patellofemoral pain syndrome (runner's knee) causes anterior knee pain worsening with stairs, squats, and prolonged sitting. Patellar tendinopathy (jumper's knee) causes pain at the base of the kneecap after activity. Meniscus tears cause medial or lateral joint line pain with swelling and possible locking. ACL rupture: sudden pop, rapid swelling, instability.",
+  },
+  {
+    id: "quad_002",
+    region: "quadriceps",
+    category: "treatment",
+    text: "Patellofemoral pain: quadriceps and hip strengthening (vastus medialis oblique, hip abductors), patellar taping, orthotics for overpronation, activity modification. Patellar tendinopathy: avoid stretching, eccentric and heavy slow resistance leg press and squat exercises. Meniscus tear non-surgical: physiotherapy in majority of cases. ACL repair: surgical reconstruction recommended for active individuals.",
+  },
 ];
 
 module.exports = medicalKnowledge;

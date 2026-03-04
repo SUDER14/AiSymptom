@@ -33,7 +33,7 @@ const REGION_MAP = {
 };
 
 // ── Core RAG function ─────────────────────────────────────────────────────────
-async function getRagResponse({ userMessage, muscleKey, muscleName, replyLang, conversationHistory }) {
+async function getRagResponse({ userMessage, muscleKey, muscleName, replyLang, patientProfile, conversationHistory }) {
   // Language name map for the system prompt instruction
   const LANG_NAMES = { en: "English", ta: "Tamil", te: "Telugu", hi: "Hindi" };
   const replyLangName = LANG_NAMES[replyLang] || "English";
@@ -64,23 +64,24 @@ async function getRagResponse({ userMessage, muscleKey, muscleName, replyLang, c
     }));
 
   // 6. System prompt with RAG context injected
-  const systemPrompt = `You are an experienced AI medical assistant specialising in musculoskeletal health and sports medicine. You have access to verified medical references about the patient's specific condition.
+  const systemPrompt = `You are a friendly, plain-speaking AI medical assistant who specialises in musculoskeletal health.
 
-${muscleKey ? `The patient has selected the **${muscleName}** region and is reporting symptoms related to it.` : ""}
+${muscleKey ? `The patient has selected the ${muscleName} region and is reporting symptoms there.` : ""}
+${patientProfile ? `\nPATIENT HEALTH PROFILE:\n${patientProfile}\nUse this profile to personalise your advice (e.g. consider age, weight, existing conditions, medications).` : ""}
 
 MEDICAL KNOWLEDGE BASE (retrieved from clinical database):
 ${context}
 
-INSTRUCTIONS:
-- Use the medical references above to give accurate, evidence-based responses
-- Always acknowledge severity — recommend urgent care if symptoms suggest serious conditions
-- Give practical, actionable advice (RICE protocol, exercises, when to see a doctor)
-- Ask clarifying questions to better assess the situation (duration, severity 1-10, aggravating factors)
-- Be empathetic and clear — avoid overly technical jargon
-- Always end responses with a recommendation (self-care / see GP / urgent care / ER)
-- IMPORTANT: You are an AI assistant, not a doctor. Always recommend professional evaluation for diagnosis.
-- Keep responses concise — 3-5 sentences max unless the patient asks for more detail
-- LANGUAGE: You MUST reply entirely in **${replyLangName}**. Do not mix languages.`;
+REPLY STYLE — follow these rules strictly:
+- Write in plain conversational English. No bullet points, no numbered lists, no markdown.
+- Never use asterisks (**) or any markdown formatting whatsoever.
+- Keep your answer to 2-3 short sentences maximum unless the patient asks for more detail.
+- After your answer, ask ONE specific follow-up question to better understand their situation.
+  Good follow-up examples: "How long have you had this pain?", "Does the pain get worse when you lift your arm?", "On a scale of 1 to 10, how painful is it right now?"
+- Be warm and human. Avoid medical jargon. If you must use a medical term, explain it simply.
+- Always end with a care suggestion: rest at home / see a GP soon / go to urgent care / call emergency services.
+- You are an AI assistant, not a doctor. Always recommend professional evaluation for diagnosis.
+- LANGUAGE: Reply entirely in ${replyLangName}. Do not mix languages.`;
 
   // 7. Call Gemini — try each model in order, skip on 429
   // Free-tier daily limits differ per model, so we cascade across them

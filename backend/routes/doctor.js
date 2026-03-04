@@ -15,6 +15,7 @@ router.post("/chat", async (req, res) => {
       muscleKey,
       muscleName,
       replyLang,
+      patientProfile,
     } = req.body;
 
     if (!message?.trim()) {
@@ -36,6 +37,7 @@ router.post("/chat", async (req, res) => {
       muscleKey: muscleKey || null,
       muscleName: muscleName || null,
       replyLang: replyLang || "en",
+      patientProfile: patientProfile || null,
       conversationHistory: history.slice(0, -1),
     });
 
