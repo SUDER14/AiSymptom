@@ -1,16 +1,36 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/AiSymptom/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ai-symptom</title>
-    <!-- ResponsiveVoice: real male/female voices for Tamil, Telugu, Hindi -->
-    <script src="https://code.responsivevoice.org/responsivevoice.js?key=FREE"></script>
-    <script type="module" crossorigin src="/AiSymptom/assets/index-s6hQoAqa.js"></script>
-    <link rel="stylesheet" crossorigin href="/AiSymptom/assets/index-CIGW-MKW.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="/AiSymptom/manifest.json" />
+
+  <!-- Theme & Icons -->
+  <meta name="theme-color" content="#2563eb" />
+  <link rel="icon" type="image/png" href="/AiSymptom/icons/icon-192.png" />
+  <link rel="apple-touch-icon" href="/AiSymptom/icons/icon-512.png" />
+
+  <!-- iOS PWA full-screen -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="AI Symptom" />
+
+  <!-- SEO / Social -->
+  <title>AI Symptom — Smart Health Assistant</title>
+  <meta name="description"
+    content="AI-powered symptom checker with a doctor assistant, health dashboard, diet advisor, and appointment reminders." />
+
+  <!-- ResponsiveVoice: real male/female voices for Tamil, Telugu, Hindi -->
+  <script src="https://code.responsivevoice.org/responsivevoice.js?key=FREE"></script>
+  <script type="module" crossorigin src="/AiSymptom/assets/index-s6hQoAqa.js"></script>
+  <link rel="stylesheet" crossorigin href="/AiSymptom/assets/index-CIGW-MKW.css">
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
 </html>

@@ -1,0 +1,32 @@
+{
+    "name": "AI Symptom — Smart Health Assistant",
+    "short_name": "AI Symptom",
+    "description": "AI-powered symptom checker with doctor assistant, health dashboard, and diet advisor.",
+    "start_url": "/AiSymptom/",
+    "scope": "/AiSymptom/",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "background_color": "#080b14",
+    "theme_color": "#2563eb",
+    "categories": [
+        "health",
+        "medical",
+        "lifestyle"
+    ],
+    "icons": [
+        {
+            "src": "/AiSymptom/icons/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/AiSymptom/icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "screenshots": [],
+    "lang": "en-US"
+}
