@@ -398,7 +398,6 @@ export default function HealthDashboard() {
         input::placeholder { color:rgba(255,255,255,0.2); }
         ::-webkit-scrollbar{width:4px} ::-webkit-scrollbar-track{background:transparent} ::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.1);border-radius:2px}
       `}</style>
-            </div>
         </Layout>
     );
 }
